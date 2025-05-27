@@ -4,7 +4,7 @@ In this repository, you will find a python implementation of the SIRVD model in 
 
 In `src` you will find the source files of the project divided in different modules.
 
-In `src/data` you will find the files containing the necessary data for the simulation with SIRVD parameters varying with time (extracted from COVID-19 real world data).
+In `src/Data` you will find the files containing the necessary data for the simulation with SIRVD parameters varying with time (extracted from COVID-19 real world data).
 
 The relation can be found in `relation.pdf`. This project was made together with Katja Brunelli.
 
