@@ -35,7 +35,7 @@ class SIRVD_NetworkModel(SIRVD_Base):
             k = graph_params.get('k', 4)
             p = graph_params.get('p', 0.1)
             self.graph = nx.connected_watts_strogatz_graph(N, k, p)
-                elif self.graph_type == 'stochastic_block_model':
+        elif self.graph_type == 'stochastic_block_model':
             sizes = graph_params.get('sizes', [N/4, N/4, N/4, N/4])
             p_matrix = graph_params.get('p_matrix', [[0.5, 0.25, 0.25, 0.25], [[0.25, 0.5, 0.25, 0.25],[0.25, 0.25, 0.5, 0.25], [0.2, 0.25, 0.25, 0.5]]])
 
