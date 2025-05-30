@@ -63,8 +63,13 @@ if __name__ == '__main__':
     enable_network_variable_model = False
 
     # Network Info
-    graph_type = 'watts_strogatz'
-    graph_parameters = {'k':6,'p':0.03}
+    graph_type = 'stochastic_block_model'
+    block_sizes = [200, 300, 500, 1000] # Only for stochastic block model
+    p_matrix = [[0.05, 0.01, 0.01, 0.01],
+                [0.01, 0.05, 0.01, 0.01],
+                [0.01, 0.01, 0.05, 0.01],
+                [0.01, 0.01, 0.01, 0.05]] # Only for stochastic block_model
+    graph_parameters = {'k':6,'p':0.03, 'm':3, 'sizes':block_sizes, 'p_matrix':p_matrix}
     is_dynamic = True
     target_higher = False
     target_lower = False
